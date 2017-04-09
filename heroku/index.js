@@ -14,7 +14,7 @@ var xhub = require('express-x-hub');
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'));
 
-app.use(xhub({ algorithm: 'sha1', secret: process.env.APP_SECRET }));
+app.use(xhub({ algorithm: 'sha1', secret: "f592e6585a06de1496f970b21502ca91" }));
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
